@@ -182,7 +182,7 @@ resource "aws_instance" "myapp-server" {
             "mkdir newdir"
         ]
         */
-        //script = file("/home/ec2-user/entry-script-on-ec2.sh")
+        script = file("entry-script-on-ec2.sh")
     }
 
     provisioner "local-exec" {
